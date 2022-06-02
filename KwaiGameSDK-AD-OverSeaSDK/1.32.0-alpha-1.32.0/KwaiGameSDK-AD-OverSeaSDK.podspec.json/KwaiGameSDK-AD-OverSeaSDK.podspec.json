@@ -1,0 +1,107 @@
+{
+  "name": "KwaiGameSDK-AD-OverSeaSDK",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "1.32.0-alpha-1.32.0",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-AD-OverSeaSDK\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-AD-OverSeaSDK_1.32.0-alpha-1.32.0_63c7.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "KwaiGameSDK/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ],
+    "KwaiGameSDK-AD-BUAdSDK/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ],
+    "KwaiGameSDK-AD-MobAdSDK/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ],
+    "KwaiGameSDK-Oversea/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ],
+    "MainFrameworks_dependency/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ]
+  },
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": [
+      "$(inherited)",
+      "/usr/lib/swift",
+      "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+      "$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)"
+    ],
+    "LD_RUNPATH_SEARCH_PATHS": [
+      "$(inherited)",
+      "'/usr/lib/swift'"
+    ],
+    "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES": "YES"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": null,
+      "public_header_files": null,
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "bz2",
+        "c++",
+        "c++abi",
+        "iconv",
+        "resolv",
+        "resolv.9",
+        "sqlite3",
+        "xml2",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AdSupport",
+        "AudioToolbox",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreImage",
+        "CoreLocation",
+        "CoreMedia",
+        "CoreMotion",
+        "CoreTelephony",
+        "CoreText",
+        "CoreVideo",
+        "Foundation",
+        "ImageIO",
+        "JavaScriptCore",
+        "MapKit",
+        "MediaPlayer",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuartzCore",
+        "QuickLook",
+        "SafariServices",
+        "Security",
+        "StoreKit",
+        "SystemConfiguration",
+        "UIKit",
+        "WebKit"
+      ]
+    }
+  ]
+}

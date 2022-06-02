@@ -1,0 +1,71 @@
+{
+  "name": "KwaiGameSDK-Report-Firebase",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "1.32.0-alpha-1.32.0",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-Report-Firebase\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-Report-Firebase_1.32.0-alpha-1.32.0_63c7.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "KwaiGameSDK/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ],
+    "KwaiGameSDK-GoogleCommon/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ],
+    "MainFrameworks_dependency/Core": [
+      "= 1.32.0-alpha-1.32.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": "headers/*.{h,hpp}",
+      "public_header_files": "headers/*.{h,hpp}",
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": null,
+      "libraries": [
+        "c++",
+        "sqlite3",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AdSupport",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuickLook",
+        "Security",
+        "StoreKit",
+        "SystemConfiguration",
+        "UIKit",
+        "WebKit"
+      ]
+    }
+  ]
+}

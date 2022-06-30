@@ -1,0 +1,87 @@
+{
+  "name": "KwaiGameSDK-WWP",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "1.31.2-alpha-1.31.2",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-WWP\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-WWP_1.31.2-alpha-1.31.2_536d.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "KwaiGameSDK/Core": [
+      "= 1.31.2-alpha-1.31.2"
+    ],
+    "KwaiGameSDK-Audio/Core": [
+      "= 1.31.2-alpha-1.31.2"
+    ],
+    "KwaiGameSDK-LiveRoom/Core": [
+      "= 1.31.2-alpha-1.31.2"
+    ],
+    "KwaiGameSDK-Video/Core": [
+      "= 1.31.2-alpha-1.31.2"
+    ],
+    "MainFrameworks_dependency/Core": [
+      "= 1.31.2-alpha-1.31.2"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": "headers/*.{h,hpp}",
+      "public_header_files": "headers/*.{h,hpp}",
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "c++",
+        "c++abi",
+        "iconv",
+        "resolv",
+        "sqlite3",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AdSupport",
+        "AudioToolbox",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreLocation",
+        "CoreMedia",
+        "CoreServices",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "MessageUI",
+        "Metal",
+        "MetalKit",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuartzCore",
+        "QuickLook",
+        "Security",
+        "SystemConfiguration",
+        "UIKit",
+        "VideoToolbox",
+        "WebKit"
+      ]
+    }
+  ]
+}

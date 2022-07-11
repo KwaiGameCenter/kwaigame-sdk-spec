@@ -9,7 +9,7 @@
   "summary": "快手游戏融合SDK",
   "homepage": "https://sdkdocs.game.kuaishou.com/#/",
   "source": {
-    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-PushReport_1.31.2-alpha-1.31.2_536d.zip",
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-PushReport_1.31.2-alpha-1.31.2_130f.zip",
     "type": "zip"
   },
   "authors": {

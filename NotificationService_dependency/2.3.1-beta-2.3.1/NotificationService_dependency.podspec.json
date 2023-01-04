@@ -1,0 +1,58 @@
+{
+  "name": "NotificationService_dependency",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "2.3.1-beta-2.3.1",
+  "license": "MIT",
+  "description": "组件: NotificationService_dependency\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_NotificationService_dependency_2.3.1-beta-2.3.1_b75f.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": null,
+      "public_header_files": null,
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": null,
+      "libraries": [
+        "c++",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuickLook",
+        "Security",
+        "SystemConfiguration",
+        "UIKit"
+      ]
+    }
+  ]
+}

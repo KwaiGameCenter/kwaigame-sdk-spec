@@ -1,0 +1,74 @@
+{
+  "name": "KwaiGameSDK-Community-Kwai",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "2.3.1-beta-2.3.1",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-Community-Kwai\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-Community-Kwai_2.3.1-beta-2.3.1_b75f.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "KwaiGameSDK/Core": [
+      "= 2.3.1-beta-2.3.1"
+    ],
+    "KwaiGameSDK-Community/Core": [
+      "= 2.3.1-beta-2.3.1"
+    ],
+    "MainFrameworks_dependency/Core": [
+      "= 2.3.1-beta-2.3.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": "headers/*.{h,hpp}",
+      "public_header_files": "headers/*.{h,hpp}",
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "c++",
+        "sqlite3",
+        "stdc++",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AdSupport",
+        "AudioToolbox",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "JavaScriptCore",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuartzCore",
+        "QuickLook",
+        "Security",
+        "SystemConfiguration",
+        "UIKit",
+        "WebKit"
+      ]
+    }
+  ]
+}

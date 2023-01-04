@@ -1,0 +1,113 @@
+{
+  "name": "MainFrameworks_dependency",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "2.2.1-beta-2.2.1",
+  "license": "MIT",
+  "description": "组件: MainFrameworks_dependency\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_MainFrameworks_dependency_2.2.1-beta-2.2.1_6271.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+  },
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": [
+      "$(inherited)",
+      "/usr/lib/swift",
+      "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+      "$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)"
+    ],
+    "LD_RUNPATH_SEARCH_PATHS": [
+      "$(inherited)",
+      "'/usr/lib/swift'"
+    ],
+    "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES": "YES"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": null,
+      "public_header_files": null,
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "bz2",
+        "c++",
+        "c++.1",
+        "c++abi",
+        "compression",
+        "iconv",
+        "resolv",
+        "resolv.9",
+        "sqlite3",
+        "stdc++",
+        "xml2",
+        "z",
+        "z.1.2.8"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AddressBook",
+        "AdServices",
+        "AdSupport",
+        "AssetsLibrary",
+        "AudioToolBox",
+        "AudioToolbox",
+        "AVFoundation",
+        "AVKit",
+        "CFNetwork",
+        "Contacts",
+        "CoreData",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreImage",
+        "CoreLocation",
+        "CoreMedia",
+        "CoreMotion",
+        "CoreServices",
+        "CoreTelephony",
+        "CoreText",
+        "CoreVideo",
+        "Foundation",
+        "GLKit",
+        "iAd",
+        "ImageIO",
+        "JavaScriptCore",
+        "LocalAuthentication",
+        "MapKit",
+        "MediaPlayer",
+        "MessageUI",
+        "Metal",
+        "MetalKit",
+        "MetalPerformanceShaders",
+        "MobileCoreServices",
+        "OpenGLES",
+        "Photos",
+        "QuartzCore",
+        "QuickLook",
+        "SafariServices",
+        "Security",
+        "StoreKit",
+        "storekit",
+        "SystemConfiguration",
+        "UIKit",
+        "VideoToolbox",
+        "WebKit"
+      ]
+    }
+  ]
+}

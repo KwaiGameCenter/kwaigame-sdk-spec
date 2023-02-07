@@ -1,0 +1,80 @@
+{
+  "name": "KwaiGameSDK-AD-KSAdSDK",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "2.4.1-beta-2.4.1",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-AD-KSAdSDK\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-AD-KSAdSDK_2.4.1-beta-2.4.1_6e5c.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "KwaiGameSDK/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ],
+    "KwaiGameSDK-AD/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ],
+    "MainFrameworks_dependency/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": null,
+      "public_header_files": null,
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "c++",
+        "c++abi",
+        "resolv.9",
+        "sqlite3",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AdSupport",
+        "AudioToolBox",
+        "AVFoundation",
+        "AVKit",
+        "CFNetwork",
+        "CoreData",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreLocation",
+        "CoreMedia",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "JavaScriptCore",
+        "MediaPlayer",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuickLook",
+        "Security",
+        "StoreKit",
+        "SystemConfiguration",
+        "UIKit",
+        "WebKit"
+      ]
+    }
+  ]
+}

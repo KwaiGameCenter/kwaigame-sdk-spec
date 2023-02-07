@@ -1,0 +1,61 @@
+{
+  "name": "KwaiGameSDK-PushReport",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "2.4.1-beta-2.4.1",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-PushReport\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-PushReport_2.4.1-beta-2.4.1_6e5c.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "NotificationService_dependency/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": "headers/*.{h,hpp}",
+      "public_header_files": "headers/*.{h,hpp}",
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "c++",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuickLook",
+        "Security",
+        "SystemConfiguration",
+        "UIKit"
+      ]
+    }
+  ]
+}

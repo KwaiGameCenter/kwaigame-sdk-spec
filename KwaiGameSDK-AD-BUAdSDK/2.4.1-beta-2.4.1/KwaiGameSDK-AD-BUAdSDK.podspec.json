@@ -1,0 +1,85 @@
+{
+  "name": "KwaiGameSDK-AD-BUAdSDK",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "version": "2.4.1-beta-2.4.1",
+  "license": "MIT",
+  "description": "组件: KwaiGameSDK-AD-BUAdSDK\n快手游戏融合SDK",
+  "summary": "快手游戏融合SDK",
+  "homepage": "https://sdkdocs.game.kuaishou.com/#/",
+  "source": {
+    "http": "https://static.yximgs.com/udata/pkg/GameSource-CDN/KwaiGameSDK_KwaiGameSDK-AD-BUAdSDK_2.4.1-beta-2.4.1_6e5c.zip",
+    "type": "zip"
+  },
+  "authors": {
+    "gamecenter": "gamecenter@kuaishou.com"
+  },
+  "default_subspecs": [
+    "Core"
+  ],
+  "dependencies": {
+    "KwaiGameSDK/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ],
+    "KwaiGameSDK-AD/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ],
+    "MainFrameworks_dependency/Core": [
+      "= 2.4.1-beta-2.4.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "10.0"
+      },
+      "source_files": null,
+      "public_header_files": null,
+      "vendored_libraries": null,
+      "vendored_frameworks": "frameworks/*.{framework}",
+      "resources": "resources/*.*",
+      "libraries": [
+        "bz2",
+        "c++",
+        "c++abi",
+        "iconv",
+        "resolv",
+        "sqlite3",
+        "xml2",
+        "z"
+      ],
+      "frameworks": [
+        "Accelerate",
+        "AdSupport",
+        "AudioToolbox",
+        "AVFoundation",
+        "CFNetwork",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreImage",
+        "CoreLocation",
+        "CoreMedia",
+        "CoreMotion",
+        "CoreTelephony",
+        "CoreText",
+        "Foundation",
+        "ImageIO",
+        "JavaScriptCore",
+        "MapKit",
+        "MediaPlayer",
+        "MessageUI",
+        "MobileCoreServices",
+        "OpenGLES",
+        "QuartzCore",
+        "QuickLook",
+        "Security",
+        "StoreKit",
+        "SystemConfiguration",
+        "UIKit",
+        "WebKit"
+      ]
+    }
+  ]
+}
